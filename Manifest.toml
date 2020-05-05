@@ -22,7 +22,6 @@ deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 
 [[LibGit2]]
-deps = ["Printf"]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
 
 [[Libdl]]
@@ -33,7 +32,7 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[MPICH_jll]]
 deps = ["CompilerSupportLibraries_jll", "Libdl", "Pkg"]
-git-tree-sha1 = "37f96287c777e133803910c0e35baec6699727ec"
+git-tree-sha1 = "fbba5a4ee1a55aacaa2c6118efcafb81f153892b"
 repo-rev = "sf/dyld_testing"
 repo-url = "https://github.com/JuliaBinaryWrappers/MPICH_jll.jl.git"
 uuid = "7cb0a576-ebde-5e09-9194-50597f1243b4"
@@ -44,7 +43,7 @@ deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
 [[Pkg]]
-deps = ["Dates", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
+deps = ["Dates", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "REPL", "Random", "SHA", "Test", "UUIDs"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 
 [[Printf]]
