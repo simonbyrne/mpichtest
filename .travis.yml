@@ -1,6 +1,9 @@
 language: julia
 dist: xenial
 
+env:
+  - DYLD_FALLBACK_LIBRARY_PATH=""
+
 os:
   - osx
 
