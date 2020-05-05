@@ -36,11 +36,17 @@ paths = [
     "/Users/travis/.julia/artifacts/0fa85a44ee97edebd281cf5b65ff4f6009aaa15e/lib"
 ]
 
-
-run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:1],':'))))
-run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:2],':'))))
-run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:3],':'))))
-run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:4],':'))))
+macro echo(expr)
+    println(expr)
+    expr
+end
+@echo run(Cmd(`$(Base.julia_cmd()) --version`))
+@echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict()))
+@echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:0],':'))))
+@echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:1],':'))))
+@echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:2],':'))))
+@echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:3],':'))))
+@echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:4],':'))))
 
 
 
