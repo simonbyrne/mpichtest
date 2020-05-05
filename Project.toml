@@ -1,0 +1,7 @@
+name = "mpichtest"
+uuid = "345c1822-f58b-49c1-b7a5-54320f502c66"
+authors = ["Simon Byrne <simonbyrne@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+MPICH_jll = "7cb0a576-ebde-5e09-9194-50597f1243b4"
