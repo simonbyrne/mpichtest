@@ -28,7 +28,7 @@ println("mpiexec(cmd -> run(`\$cmd -n 1 ./myprintenv`))")
 println("========================================")
 mpiexec(cmd -> run(`$cmd -n 1 ./myprintenv`))
 
-
+#=
 paths = [
     "/Users/travis/julia/bin/../lib/julia"
     "/Users/travis/julia/bin/../lib"
@@ -48,7 +48,7 @@ end
 @echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:3],':'))))
 @echo run(Cmd(`$(Base.julia_cmd()) --version`; env=Dict("DYLD_FALLBACK_LIBRARY_PATH"=>join(paths[1:4],':'))))
 
-
+=#
 
 println("========================================")
 println("mpiexec(cmd -> run(`julia --version`))")

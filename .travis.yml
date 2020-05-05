@@ -1,13 +1,10 @@
 language: julia
 dist: xenial
 
-env:
-  - DYLD_FALLBACK_LIBRARY_PATH=""
-
 os:
   - osx
 
-osx_image: xcode11.4
+# osx_image: xcode11.4
 
 julia:
   - 1.3
